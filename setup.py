@@ -5,7 +5,7 @@ with open("README.rst", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="solid_angle_utils_sebastian-achim-mueller",
-    version="0.0.1",
+    version="0.0.2",
     description="Helps you with solid angles and cones.",
     long_description=long_description,
     long_description_content_type="text/x-rst",
