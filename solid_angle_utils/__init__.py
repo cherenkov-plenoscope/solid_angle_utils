@@ -1,5 +1,6 @@
-import numpy as np
+from .version import __version__
 from . import cone
+import numpy as np
 
 
 def sr2squaredeg(solid_angle_sr):
