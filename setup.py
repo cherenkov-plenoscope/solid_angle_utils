@@ -2,8 +2,8 @@ import setuptools
 import os
 
 
-with open("README.rst", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+with open("README.rst", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
 
 with open(os.path.join("solid_angle_utils", "version.py")) as f:
@@ -20,9 +20,6 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/x-rst",
     url="https://github.com/cherenkov-plenoscope/solid_angle_utils",
-    project_urls={
-        "Bug Tracker": "https://github.com/cherenkov-plenoscope/solid_angle_utils/issues",
-    },
     author="Sebastian Achim Mueller",
     author_email="sebastian-achim.mueller@mpi-hd.mpg.de",
     packages=["solid_angle_utils", "solid_angle_utils.cone",],
