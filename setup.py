@@ -14,7 +14,7 @@ with open(os.path.join("solid_angle_utils", "version.py")) as f:
 
 
 setuptools.setup(
-    name="solid_angle_utils_sebastian-achim-mueller",
+    name="solid_angle_utils",
     version=version,
     description="Helps you with solid angles and cones.",
     long_description=long_description,
