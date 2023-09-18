@@ -13,5 +13,7 @@ def test_forth_and_back():
         sr_back = solid_angle_utils.squaredeg2sr(sd)
 
         np.testing.assert_approx_equal(
-            actual=sr_back, desired=sr, significant=7,
+            actual=sr_back,
+            desired=sr,
+            significant=7,
         )

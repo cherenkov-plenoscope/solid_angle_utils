@@ -18,5 +18,7 @@ def test_cone_conversion_forth_and_back():
         half_angle_back = solid_angle_utils.cone.half_angle(solid_angle)
 
         np.testing.assert_approx_equal(
-            actual=half_angle_back, desired=half_angle, significant=7,
+            actual=half_angle_back,
+            desired=half_angle,
+            significant=7,
         )

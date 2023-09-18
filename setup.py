@@ -22,7 +22,10 @@ setuptools.setup(
     url="https://github.com/cherenkov-plenoscope/solid_angle_utils",
     author="Sebastian Achim Mueller",
     author_email="sebastian-achim.mueller@mpi-hd.mpg.de",
-    packages=["solid_angle_utils", "solid_angle_utils.cone",],
+    packages=[
+        "solid_angle_utils",
+        "solid_angle_utils.cone",
+    ],
     package_data={"solid_angle_utils": []},
     install_requires=[],
     classifiers=[
