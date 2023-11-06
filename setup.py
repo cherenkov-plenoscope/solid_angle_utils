@@ -25,6 +25,7 @@ setuptools.setup(
     packages=[
         "solid_angle_utils",
         "solid_angle_utils.cone",
+        "solid_angle_utils.triangle",
     ],
     package_data={"solid_angle_utils": []},
     install_requires=[],
