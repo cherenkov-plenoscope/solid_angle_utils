@@ -10,6 +10,7 @@ install
 *******
 
 .. code:: bash
+
     pip install solid_angle_utils
 
 
@@ -20,6 +21,7 @@ simple conversion of units
 Inspired by ``numpy`` ``rad2deg`` and ``deg2rad``.
 
 .. code:: python
+
     import solid_angle_utils
 
     a_sr = solid_angle_utils.squaredeg2sr(10)
@@ -38,6 +40,7 @@ Cones
 Convert solid angle to half angle, and the other way around.
 
 .. code:: python
+
     import solid_angle_utils
 
     cone_sa = solid_angle_utils.cone.solid_angle(half_angle_rad=0.1)
@@ -57,6 +60,7 @@ Triangles
 Estimate the solid angle of a spherical triangle.
 
 .. code:: python
+
     import solid_angle_utils
     import numpy as np
 
