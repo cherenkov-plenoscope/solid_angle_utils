@@ -17,16 +17,17 @@ def half_angle(solid_angle_sr):
     return np.arccos(-cap_hight + 1.0)
 
 
-def half_angle_space(stop_half_angle_rad, num):
-    assert num >= 1
-    assert stop_half_angle_rad > 0.0
+def half_angle_space(start_half_angle_rad, stop_half_angle_rad, num):
+    """
+    Returns the half-angles of cones where every next larger cone has the same
+    additional amount of solid angle.
 
-    cone_stop_sr = solid_angle(stop_half_angle_rad)
-    cone_step_sr = cone_stop_sr / num
-
-    edges = [0]
-    for i in np.arange(1, num):
-        a = half_angle(i * cone_step_sr)
-        edges.append(a)
-    edges.append(stop_half_angle_rad)
-    return np.array(edges)
+    So this is a linear spacing in the cone's solid angles.
+    """
+    return half_angle(
+        np.linspace(
+            start=solid_angle(start_half_angle_rad),
+            stop=solid_angle(stop_half_angle_rad),
+            num=num,
+        )
+    )
