@@ -1,5 +1,6 @@
 from .version import __version__
 from . import cone
+from . import triangle
 import numpy as np
 
 
