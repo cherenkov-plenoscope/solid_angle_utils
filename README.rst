@@ -1,7 +1,7 @@
 #################
 Solid Angle Utils
 #################
-|TestStatus| |PyPiStatus| |BlackStyle|
+|TestStatus| |PyPiStatus| |BlackStyle| |BlackPackStyle| |MITLicenseBadge|
 
 A python-package to help with solid angles.
 
@@ -84,3 +84,9 @@ Estimate the solid angle of a spherical triangle.
 
 .. |PyPiStatus| image:: https://img.shields.io/pypi/v/solid_angle_utils
     :target: https://pypi.org/project/solid_angle_utils
+
+.. |BlackPackStyle| image:: https://img.shields.io/badge/pack%20style-black-000000.svg
+    :target: https://github.com/cherenkov-plenoscope/black_pack
+
+.. |MITLicenseBadge| image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :target: https://opensource.org/licenses/MIT
